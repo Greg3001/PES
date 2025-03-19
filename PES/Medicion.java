@@ -14,7 +14,7 @@ public class Medicion extends Model {
     public Contaminante contaminante;
 
     @ManyToOne
-    public Ubicacion ubicacion;
+    public Puerto puerto; 
 
     public Medicion(double valor, LocalDateTime fechaHora, Contaminante contaminante, Ubicacion ubicacion) {
         this.valor = valor;
