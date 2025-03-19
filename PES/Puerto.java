@@ -12,7 +12,7 @@ public class Puerto extends Model {
     public String nombre;
     
     @OneToMany(mappedBy = "puerto")
-    public List<Barco> barcos = new ArrayList<>();
+    public List<Ubicacion> ubicaciones = new ArrayList<>();
     
     public Puerto(String nombre) {
         this.nombre = nombre;
