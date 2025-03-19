@@ -15,11 +15,8 @@ public class Barco extends Model {
     @ManyToOne
     public EmpresaNaviera empresa;
 
-    @ManyToOne
-    public Puerto puerto;
-
     @OneToMany(mappedBy = "barco")
-    public List<Medicion> mediciones = new ArrayList<>();
+    public List<Ubicacion> ubicaciones = new ArrayList<>();
 
     public Barco(String nombre, EmpresaNaviera empresa, Puerto puerto) {
         this.nombre = nombre;
