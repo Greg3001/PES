@@ -13,6 +13,9 @@ public class Puerto extends Model {
     
     @OneToMany(mappedBy = "puerto")
     public List<Ubicacion> ubicaciones = new ArrayList<>();
+
+    @OneToMany(mappedBy = "puerto")  
+    public List<Medicion> mediciones = new ArrayList<>();
     
     public Puerto(String nombre) {
         this.nombre = nombre;
