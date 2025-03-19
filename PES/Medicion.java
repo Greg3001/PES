@@ -1,31 +1,30 @@
 package models;
 
 import javax.persistence.Entity;
-import play.db.jpa.Model;
-
 import javax.persistence.ManyToOne;
-import java.util.Date;
+import play.db.jpa.Model;
+import java.time.LocalDateTime;
 
 @Entity
 public class Medicion extends Model {
-    public Date fecha;
     public double valor;
-
-    @ManyToOne
-    public Barco barco;
+    public LocalDateTime fechaHora;
 
     @ManyToOne
     public Contaminante contaminante;
 
-    public Medicion(Date fecha, double valor, Barco barco, Contaminante contaminante) {
-        this.fecha = fecha;
+    @ManyToOne
+    public Ubicacion ubicacion;
+
+    public Medicion(double valor, LocalDateTime fechaHora, Contaminante contaminante, Ubicacion ubicacion) {
         this.valor = valor;
-        this.barco = barco;
+        this.fechaHora = fechaHora;
         this.contaminante = contaminante;
+        this.ubicacion = ubicacion;
     }
 
     public Medicion() {
-        this.fecha = new Date();
         this.valor = 0.0;
+        this.fechaHora = LocalDateTime.now();
     }
 }
