@@ -2,12 +2,10 @@ import java.util.*;
 
 class User {
     String username, password;
-    int age;
     
     User(String u, String p, int a) {
         username = u;
         password = p;
-        age = a;
     }
 }
 
@@ -29,14 +27,14 @@ class consulta {
         products.add(new Product("Smartphone"));
     }
 
-    public void register(String username, String password, int age) {
+    public void register(String username, String password) {
         for (User u : users) {
             if (u.username.equals(username)) {
                 System.out.println("El usuario ya existe.");
                 return;
             }
         }
-        users.add(new User(username, password, age));
+        users.add(new User(username, password));
         System.out.println("Usuario registrado: " + username);
     }
 
