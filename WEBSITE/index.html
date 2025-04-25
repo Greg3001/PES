@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NIMS - Naval Industry Monitoring Systems</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">NIMS</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="plans.html">Solutions</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Naval Industry <span>Monitoring Systems</span></h2>
+      <p>Advanced maritime solutions for real-time data and monitoring.<br/>
+         Engineered for precision and reliability in naval operations.</p>
+      <a href="plans.html" class="cta-button">Start Monitoring</a>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2 class="section-title">Live Maritime Tracking</h2>
+    <div id="map"></div>
+  </section>
+
+  <script src="script.js"></script>
+  
+  <footer class="footer">
+    <p>&copy; 2025 NIMS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
