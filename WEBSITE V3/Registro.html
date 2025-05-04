@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Naval Industry Monitoring Systems</title>
+    <link rel="stylesheet" href="style_registro.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="script_registro.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+          <h1 class="logo">NIMS</h1>
+          <nav>
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="plans.html">Solutions</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="Registro.html">Registro</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <div class="registro-container">
+        <h2>Registro</h2>
+        <form id="registro-form" method="post" action="enviar_formulario.php">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+
+        <div class="form-options">
+            <a href="#" id="login-link">Iniciar Sesión</a>
+            <a href="#" id="forgot-password-link">¿Olvidaste tu contraseña?</a>
+            <div id="google-button"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Naval Industry Monitoring Systems. All rights reserved.</p>
+      </footer>
+</body>
+
+</html>

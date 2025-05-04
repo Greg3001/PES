@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NIMS - Naval Industry Monitoring Systems</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">NIMS</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plans.html">Solutions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Registro.html">Registro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Naval Industry <span>Monitoring Systems</span></h2>
+      <p>Advanced maritime solutions for real-time data and monitoring.<br/>
+         Engineered for precision and reliability in naval operations.</p>
+      <a href="plans.html" class="cta-button">Start Monitoring</a>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2 class="section-title">Live Maritime Tracking</h2>
+    <div id="map"></div>
+  </section>
+
+  <section class="map-section atmosphere-map-section">  
+    <h2 class="section-title">Atmospheric Simulation</h2>
+    <div id="atmosphere-map"></div>  
+  </section>
+
+  <section class="chart-section">
+    <div class="container">
+      <h2 class="section-title">Port Pollution Monitoring</h2>
+      <div class="chart-controls">
+        <label for="port-select">Select Port:</label>
+        <select id="port-select">
+          </select>
+      </div>
+      <div class="chart-container">
+        <canvas id="pollutionChart" width="984"></canvas>>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-section">  
+    <h2 class="section-title">Upcoming Innovations</h2>
+    <div class="upcoming-content">
+
+      <div class="upcoming-item">
+        <img src="air.png" alt="Air Pollution Monitoring Software" class="upcoming-image">
+        <h3>Air Pollution Monitoring Software</h3>
+        <p>
+          Our cutting-edge software will provide real-time monitoring and analysis
+          of air quality. Features include pollutant tracking, predictive modeling,
+          and customizable alerts. Stay informed and take action to improve
+          environmental health.
+        </p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+
+      <div class="upcoming-item">
+        <img src="route.webp" alt="Route Optimization Software" class="upcoming-image">
+        <h3>Route Optimization Software</h3>
+        <p>
+          Maximize efficiency and reduce costs with our intelligent route
+          optimization software. Plan optimal routes for your fleet, considering
+          traffic, weather, and delivery schedules. Improve logistics and enhance
+          customer satisfaction.
+        </p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 Naval Industry Monitoring Systems. All rights reserved.</p>
+  </footer>
+</body>
+</html>
